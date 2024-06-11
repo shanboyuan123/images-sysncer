@@ -27,5 +27,5 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://ubuntu:latest docker://registry.cn-hangzhou.aliyuncs.com/onnx_test/ubuntu:latest
+         skopeo copy docker://nvidia/cuda:12.2.2-cudnn8-devel-centos7 docker://registry.cn-hangzhou.aliyuncs.com/onnx_test/nvidia/cuda:12.2.2-cudnn8-devel-centos7
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称 作者：全栈工程师修炼指南 https://www.bilibili.com/read/cv35192993/?from=search&spm_id_from=333.337.0.0 出处：bilibili
